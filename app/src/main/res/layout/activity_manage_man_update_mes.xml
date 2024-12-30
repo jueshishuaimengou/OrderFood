@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bac"
+    android:layout_gravity="center_vertical|center_horizontal"
+    tools:context=".activity.man.ManageManUpdateMesActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/man_manage_updateBusiness_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="修 改 店 铺 信 息"
+        app:titleTextColor="@color/white"
+        android:background="@color/ThemeRed"
+        app:navigationIcon="@drawable/back"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            >
+            <ImageView
+                android:id="@+id/register_man_tx"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/upimg"
+                android:layout_marginTop="45dp"
+                >
+            </ImageView>
+
+
+
+            <EditText
+                android:id="@+id/man_manage_updateBusiness_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺名称"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_background"
+                android:padding="12dp"
+                />
+
+
+            <EditText
+                android:id="@+id/man_manage_updateBusiness_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺描述"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:gravity="top"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                />
+
+            <EditText
+                android:id="@+id/man_manage_updateBusiness_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺类型"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_background"
+                android:padding="12dp"
+                />
+
+
+            <Button
+                android:id="@+id/man_manage_updateBusiness_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/ThemeRed"
+                android:text="修改商家信息"
+                android:textColor="#FFFFFF"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
